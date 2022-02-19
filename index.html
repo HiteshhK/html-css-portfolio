@@ -9,24 +9,31 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/761e4c8e5c.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Portfolio</title>
   </head>
 
   <body>
     <section class="hero">
-      <nav>
+      <nav id="nav-list">
         <img clss="logo" src="src/logo.png" alt="HK's logo" />
         <ul>
-          <li>About me</li>
-          <li>Projects</li>
-          <li>Contacts</li>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-me">Contacts</a></li>
         </ul>
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>toggle
+        </button>
       </nav>
       <div class="hero-area">
         <div class="hero-text">
           <h1>Hitesh Kaushik</h1>
           <p>MEAN/MERN Stack Developer</p>
-          <div class="button">About me</div>
+          <div class="button"><a href="#about-me">About me</a></div>
         </div>
         <div class="socials">
           <div class="social">
@@ -80,7 +87,7 @@
         </div>
       </div>
     </section>
-    <section class="sub-section">
+    <section class="sub-section" id="about-me">
       <div class="information">
         <h2>About Me</h2>
         <p>Hello, My name is Hitesh Kaushik, I am a Software Developer</p>
@@ -93,7 +100,7 @@
         />
       </div>
     </section>
-    <section class="projects-section">
+    <section class="projects-section" id="projects">
       <h2>Projects</h2>
       <div class="project-container">
         <div class="project-card">
@@ -158,7 +165,10 @@
         </div>
       </div>
     </section>
-    <footer></footer>
+    <footer id="contact-me">
+      <h2>Contact me</h2>
+      <p>kaushikhitesh002@gmail.com</p>
+    </footer>
     <script src="src/app.js"></script>
   </body>
 </html>
